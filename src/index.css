@@ -1,3 +1,17 @@
 .profileIcon {
     height: 50px;
 }
+
+/* Icon Color */
+
+.facebook-icon {
+    color: #3B599C;
+}
+
+.twitter-icon {
+    color: #58A7DE;
+}
+
+.instagram-icon {
+    color: #D82D7E;
+}
