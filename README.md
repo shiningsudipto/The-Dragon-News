@@ -7,3 +7,8 @@
     'react-refresh/only-export-components': 'warn',
   },
 ```
+
+## API Repository:
+```
+https://github.com/shiningsudipto/the-dragon-news-api
+```

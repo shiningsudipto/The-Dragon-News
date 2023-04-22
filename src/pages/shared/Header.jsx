@@ -19,7 +19,7 @@ const Header = () => {
                 </Marquee>
             </div>
             {/* Navbar */}
-            <Navbar collapseOnSelect expand="lg" bg="white" variant="white">
+            <Navbar collapseOnSelect expand="lg" bg="white" variant="white" className='mb-4'>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mx-auto fw-semibold">

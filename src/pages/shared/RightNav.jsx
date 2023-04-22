@@ -8,6 +8,7 @@ import bg2 from '../../assets/bg1.png'
 const RightNav = () => {
     return (
         <div>
+            <h4 className='mb-3'>Login with</h4>
             <div>
                 <Button className='mb-3' variant="outline-primary"><FaGofore /> Login with Google</Button>
                 <br />
