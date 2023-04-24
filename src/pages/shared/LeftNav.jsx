@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import LeftNavbarEditorsInsights from './LeftNavbarEditorsInsights';
 
 const LeftNav = () => {
     const [categories, setCategories] = useState([]);
@@ -17,6 +18,9 @@ const LeftNav = () => {
                         key={category.id}
                     >{category.name}</Link>)
                 }
+            </div>
+            <div className='mt-4'>
+                <LeftNavbarEditorsInsights />
             </div>
         </div>
     );

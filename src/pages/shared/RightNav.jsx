@@ -25,7 +25,7 @@ const RightNav = () => {
                 <QZone />
             </div>
             <div className='position-relative mt-3'>
-                <img src={bg} alt="" />
+                <img src={bg} className='img-fluid' alt="" />
                 <div className='position-absolute top-0 text-white text-center p-4'>
                     <h2 className='mt-5 mb-4'> Create an Amazing Newspaper</h2>
                     <p>Discover thousands of options, easy to customize layouts, one-click to import demo and much more.</p>
