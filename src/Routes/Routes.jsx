@@ -1,10 +1,15 @@
 import React from 'react';
-import { createBrowserRouter } from 'react-router-dom';
+import { Navigate, createBrowserRouter } from 'react-router-dom';
 import Home from '../pages/Home';
 import Layout from '../layouts/Layout';
 import Category from '../pages/shared/Category';
 import News from '../pages/News';
 import NewsLayout from '../layouts/NewsLayout';
+// import Login from '../pages/Login';
+import UserAuth from '../layouts/UserAuth';
+import Registration from '../pages/Registration';
+import Login from '../pages/Login';
+import PrivateRoute from './PrivateRoute';
 
 const routes = createBrowserRouter([
     {
@@ -30,10 +35,18 @@ const routes = createBrowserRouter([
         children: [
             {
                 path: ':id',
-                element: <News />,
+                element: <PrivateRoute><News /></PrivateRoute>,
                 loader: ({ params }) => fetch(`http://localhost:5000/news/${params.id}`)
             }
         ]
+    },
+    {
+        path: 'login',
+        element: <Login />,
+    },
+    {
+        path: 'signup',
+        element: <Registration />,
     }
 ])
 
