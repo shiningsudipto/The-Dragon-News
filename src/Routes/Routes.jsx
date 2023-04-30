@@ -20,12 +20,12 @@ const routes = createBrowserRouter([
                 path: '/',
                 element: <Category />,
                 loader: () => fetch('https://shiningsudipto.github.io/the-dragon-news-api/news.json'),
-                // loader: ()=> fetch('http://localhost:5000/news')
+                // loader: ()=> fetch('https://the-dragon-news-server-shiningsudipto.vercel.app/news')
             },
             {
                 path: '/category/:id',
                 element: <Category />,
-                loader: ({ params }) => fetch(`http://localhost:5000/categories/${params.id}`)
+                loader: ({ params }) => fetch(`https://the-dragon-news-server-shiningsudipto.vercel.app/categories/${params.id}`)
             },
         ]
     },
@@ -36,7 +36,7 @@ const routes = createBrowserRouter([
             {
                 path: ':id',
                 element: <PrivateRoute><News /></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5000/news/${params.id}`)
+                loader: ({ params }) => fetch(`https://the-dragon-news-server-shiningsudipto.vercel.app/news/${params.id}`)
             }
         ]
     },
